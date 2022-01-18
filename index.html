@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="content">
+      <form>
+        <div class="field">
+          <p>Days</p>
+          <input
+            type="text"
+            name="day"
+            id="day"
+            maxlength="2"
+            placeholder="dd"
+            required
+          />
+        </div>
+        <div class="field">
+          <p>Month</p>
+          <input
+            type="text"
+            name="month"
+            id="month"
+            maxlength="2"
+            placeholder="mm"
+            required
+          />
+        </div>
+        <div class="field">
+          <p>Year</p>
+          <input
+            type="text"
+            name="year"
+            id="year"
+            maxlength="4"
+            placeholder="yyyy"
+            required
+          />
+        </div>
+      </form>
+      <button class="submit" onclick="calcAge()">Calculate</button>
+    </div>
+    <div id="result"><p id="out-put"></p></div>
+  </body>
+</html>
