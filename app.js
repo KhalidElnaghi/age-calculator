@@ -8,7 +8,7 @@ function calcAge() {
   let currentMonth = 1 + date.getMonth();
   let cuurentYear = date.getFullYear();
   let monthes = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-  if (day <= 31 && month <= 12 && year <= cuurentYear) {
+  if (day <= 31 && month <= 12 && year < cuurentYear) {
     if (day > currentDay) {
       currentDay += monthes[currentMonth - 1];
       currentMonth -= 1;
